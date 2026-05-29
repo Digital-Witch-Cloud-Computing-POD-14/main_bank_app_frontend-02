@@ -30,7 +30,10 @@ jobs:
 
 
     - name: Build container image
-      run: docker build -t bank-app-frontend:latest .
+      run: |
+       docker build \
+       --build-arg REACT_APP_API_URL=https://bank.themainpod14.online \
+       -t bank-app-frontend:latest .
 
     - name: Log in to ECR with short-lived credentials
       run: |
