@@ -12,7 +12,7 @@ services:
       # Bind the CRA dev server to all interfaces inside the container
       HOST: "0.0.0.0"
       # Backend on the host machine (browser calls this from your machine, not from inside the container)
-      REACT_APP_API_URL: http://localhost:8080
+      REACT_APP_API_URL: https://bank.themainpod14.online
       # File watching in Docker on macOS/Windows
       CHOKIDAR_USEPOLLING: "true"
       WDS_SOCKET_HOST: localhost
